@@ -260,3 +260,130 @@ button{
         height: auto;
     }
 }
+
+body {
+    margin: 0
+}
+
+#invitation {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/travelers.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#textBackground {
+    border-radius: 20px;
+    padding: 3%;
+    background: rgba(60, 60, 60, 0.22);
+}
+
+#textBackground h2 {
+    color: #fff;
+}
+
+footer {
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2980B9;
+}
+
+.linksColumn {
+    padding: 0;
+    margin: 0;
+}
+
+.linksColumn {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.linksColumn li {
+    list-style-type: none;
+    color: #393939;
+}
+
+.linksColumn li a {
+    text-decoration: none;
+    color: #393939;
+    font-weight: bold;
+}
+
+.rightmostColumn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.rightmostColumn .socialMedia {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rightmostColumn .socialMedia li {
+    list-style-type: none;
+}
+
+.rightmostColumn ul li img {
+    width: 30px;
+}
+
+.rightmostColumn p a {
+    color: #393939;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+        "topRow topRow"
+        "bottomRow bottomRow";
+        padding-bottom: 0;
+    }
+
+    .linksColumn {
+        width: 100%;
+    }
+
+    .linksColumn li {
+        text-align: center;
+    }
+
+    .rightmostColumn {
+        grid-area: bottomRow;
+    }
+
+    .rightmostColumn .socialMedia {
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .rightmostColumn .socialMedia li {
+        width: 30px;
+        justify-content: space-around;
+    }
+    .rightmostColumn .socialMedia img {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+    }
+}
