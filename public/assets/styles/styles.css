@@ -6,7 +6,7 @@ body {
     padding: 10%;
     display: flex;
     justify-content: center;
-    background-image: url("../imgs/travelers.jpg");
+    background-image: url("../images/travelers.jpg");
     background-position: center;
     background-size: cover;
 }
