@@ -27,12 +27,13 @@ section, footer {
 }
 
 footer {
-    padding: 3% 0;
+    padding: 5% 0;
     display: flex;
     justify-content: space-evenly;
+    background-color: #2980B9;
 }
 
-ul {
+.linksColumn {
     border: 3px solid olivedrab;
     padding: 0;
     margin: 0;
@@ -54,6 +55,7 @@ ul {
 .linksColumn li a {
     text-decoration: none;
     color: #393939;
+    font-weight: bold;
 }
 
 .rightmostColumn {
@@ -68,6 +70,8 @@ ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .rightmostColumn .socialMedia li {
@@ -85,4 +89,52 @@ ul {
 
 .rightmostColumn p a {
     color: #393939;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+        "topRow topRow"
+        "bottomRow bottomRow";
+        padding-bottom: 0;
+    }
+
+    .linksColumn {
+        width: 100%;
+    }
+
+    .linksColumn li {
+        text-align: center;
+    }
+
+    .rightmostColumn {
+        grid-area: bottomRow;
+    }
+
+    .rightmostColumn .socialMedia {
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .rightmostColumn .socialMedia li {
+        width: 30px;
+        justify-content: space-around;
+    }
+    .rightmostColumn .socialMedia img {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+    }
 }
