@@ -6,7 +6,21 @@ section, footer {
     border: 3px solid blue;
 }
 
+#invitation {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../imgs/travelers.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#textBackground {
+        border: 3px solid rebeccapurple;
+}
+
 footer {
+    padding: 3% 0;
     display: flex;
     justify-content: space-evenly;
 }
@@ -33,7 +47,14 @@ li {
     border: 3px solid darkred;
     display: flex;
     flex-flow: column;
+}
 
+.rightmostColumn ul li img {
+    width: 80px;
+}
+
+.rightmostColumn p {
+    border: 3px solid firebrick;
 }
 
 .socialMedia {
