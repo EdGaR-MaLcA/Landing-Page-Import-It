@@ -1,0 +1,46 @@
+section.hero{
+    /*border: 1px solid red;*/
+    background-color: #9BBFD7;
+    padding: 20px;
+}
+
+h1{
+    color: #092C4C;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+div.photoAndText{
+    display: flex;
+    justify-content: center;
+    margin: 0px 40px 40px 40px;
+    /*border: 1px solid red;*/
+}
+
+img{
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+div.textAndButton{
+    margin-left: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    width: 600px;
+    height: 400px;
+    /*border: 1px solid blue;*/
+}
+
+p{
+    font-size: 25px;
+}
+
+botton{
+    background-color: #2980B9;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
