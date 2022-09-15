@@ -126,13 +126,13 @@ li {
 
 /* Rafael */
 
-section.hero {
+#hero {
     /*border: 1px solid red;*/
     background-color: #9BBFD7;
     padding: 20px;
     margin-top: 7rem;
 }
-section.traveler {
+#traveler {
     /*border: 1px solid red;*/
     background-color: #9BBFD7;
     padding: 20px;
@@ -335,7 +335,7 @@ body {
     margin: 0
 }
 
-#invitation {
+#contact {
     padding: 10%;
     display: flex;
     justify-content: center;
