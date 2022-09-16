@@ -204,7 +204,7 @@ button {
 
 
 #customer {
-    background-color: #3498db;
+    background: #5DABDE;
     padding: 20px;
 }
 
@@ -235,6 +235,7 @@ button {
 
 .text h2 {
     text-align: center;
+    color: white;
 }
 
 .text p {
