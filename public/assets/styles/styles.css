@@ -331,10 +331,6 @@ button {
     }
 }
 
-body {
-    margin: 0
-}
-
 #contact {
     padding: 10%;
     display: flex;
@@ -456,5 +452,65 @@ footer {
         display: flex;
         flex-flow: column;
         padding-bottom: 0;
+    }
+}
+
+/* About Us Section */
+#aboutUs{
+    background-color: #9BBFD7;
+}
+#aboutUs .mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #9BBFD7;
+}
+.titleBackground{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1% 0;
+}
+.mainContainer h3 {
+    color: #fff;
+}
+.videoSection {
+    width: 40%;
+    text-align: center;
+    padding: 0 0 3% 0;
+}
+
+.mainContainer iframe {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Health Professionals Section */
+    .mediaContainer {
+        flex-flow: column;
+        align-items: center;
+        margin: 2% 0 2% 0;
+        font-size: 80%;
+    }
+
+    .feature {
+        width: 80%;
+    }
+
+    .mainContainer img {
+        border-radius: 5%;
+    }
+
+    #connectBtn {
+        width: 45%;
+    }
+
+    /* About Us Section */
+    #aboutUs .mainContainer {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .videoSection {
+        width: 80%;
     }
 }
