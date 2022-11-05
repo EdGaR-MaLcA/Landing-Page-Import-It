@@ -666,37 +666,6 @@ How Does It Work Section
   color: var(--black-900);
 }
 
-/*--------------------
-<<<<<<< HEAD
-Team Section
---------------------*/
-.team {
-  background-color: #ffffff;
-}
-
-.team-item {
-  margin: 15px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-black-100);
-  text-align: center;
-}
-
-.team-item h3 {
-  font-size: 18px;
-  color: var(--black-900);
-  font-weight: 500;
-  margin: 15px 0 5px;
-  text-transform: capitalize;
-}
-
-.team-item span {
-  display: block;
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--black-400);
-}
-
 /*=======
 Reviews Section
 --------------------*/
@@ -831,6 +800,48 @@ Footer Section
 }
 
 /*--------------------
+About the Product Section
+--------------------*/
+.about-the-product-item {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-the-product-item.line-right::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 50%;
+  top: 60px;
+  background-color: var(--main-color);
+  z-index: -1;
+}
+
+.about-the-product-item .step {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-color: var(--main-color);
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.about-the-product-item h3 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--black-900);
+}
+
+/*--------------------
 Responsive
 --------------------*/
 @media(max-width:991px) {
@@ -874,16 +885,16 @@ Responsive
     font-size: 40px;
   }
 
-  .como-funciona-item,
+  .how-does-it-work-item,
   .app-download-item {
     margin-bottom: 30px;
   }
 
-  .como-funciona-item.line-right::before {
+  .how-does-it-work-item.line-right::before {
     content: none;
   }
 
-  .como-funciona-item {
+  .how-does-it-work-item {
     box-shadow: var(--shadow-black-100);
     border-radius: 10px;
   }
@@ -898,7 +909,7 @@ Responsive
     margin-bottom: 80px;
   }
 
-  .estadisticas-img {
+  .statistics-img {
     margin-bottom: 30px;
   }
 
@@ -906,7 +917,7 @@ Responsive
     font-size: 35px;
   }
 
-  .estadisticas .section-title h2 {
+  .statistics .section-title h2 {
     text-align: center;
   }
 }
